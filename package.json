@@ -6,6 +6,7 @@
   "author": "jmargrove <grovejam@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "find src -type f | entr -c make build",
     "test": "yarn bats tests"
   },
   "devDependencies": {
