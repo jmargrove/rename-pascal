@@ -6,8 +6,9 @@
   "author": "jmargrove <grovejam@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "find src -type f | entr -c make build",
-    "test": "yarn bats tests"
+    "build": "find src -type f -iname \"*.sh\" | nohup entr -c make > /dev/null  &",
+    "test": "yarn bats tests",
+    "clean": "./clean-up.sh" 
   },
   "devDependencies": {
     "bats": "^1.8.2"
