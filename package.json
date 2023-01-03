@@ -1,0 +1,14 @@
+{
+  "name": "toolkit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jmargrove/rename-pascal.git",
+  "author": "jmargrove <grovejam@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn bats tests"
+  },
+  "devDependencies": {
+    "bats": "^1.8.2"
+  }
+}
